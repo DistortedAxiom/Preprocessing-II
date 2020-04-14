@@ -9,11 +9,35 @@
     padding: @padding;
     font-size: 2rem;
     border-radius: 1rem;
+
+    &:hover {
+        background-color: rgb(180, 173, 71);
+    }
 }
-
-
 
 .mobile-padding(@padding-left: 1rem, @padding-right: 1rem) {
     padding-left: @padding-left;
     padding-right: @padding-right;
+}
+
+.img-animation() {
+
+    @keyframes bounceIn {
+        0% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        60% {
+          transform: scale(0.8);
+          opacity: 0.8;
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+    &:hover {animation-duration: 1.5s;
+             animation-name: bounceIn;
+
+    }
 }
