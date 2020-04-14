@@ -1,1 +1,19 @@
 // Mixins in here
+
+.button-mixin(@background-color: @button-bg, @width: 200px, @color:white, @padding: 5%) {
+    width: @width;
+    background-color: @background-color;
+    color: @color;
+    text-align: center;
+    cursor: pointer;
+    padding: @padding;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+
+
+
+.mobile-padding(@padding-left: 1rem, @padding-right: 1rem) {
+    padding-left: @padding-left;
+    padding-right: @padding-right;
+}
